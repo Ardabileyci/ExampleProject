@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester United</title>
+    <meta name="keywords" content="halisaha" />
+    <meta name="description" content="Manchester United">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <header class="bg-red">
+        <div class="navbar">
+            <ul id="firstUl">
+                <img class="home-class"><a href="#" class="home"></a></img>
+                <li class="fikstur-class">Fikstür</li>
+                <li class="players-class">Oyuncular</li>
+                <li class="game-plan">Oyun Planı</li>
+                <li class="highlight-class">Özetler</li>
+            </ul>
+            <ul id="secondUl">
+                <li class="login-class">Giriş Yap</li>
+                <li class="signin-class">Kayıt Ol</li>
+                <li class="logout-class">Çıkış Yap</li>
+            </ul>
+        </div>
+    </header>
+    <header class="bg-black">
+        <div class="countdown-bar">
+            <div class="next-match">
+                <div class="next-match-img">
+                    <img src="images/manulogo-Photoroom.png" alt="logo">
+                    <div>VS</div>    
+                    <div><img src="images/FC-Twente-Enschede-Photoroom.png" alt="logo"></div>
+                </div>
+                <div class="matchCountdown">
+                    <div>
+                        <p id="days">00</p>
+                        <span>Day</span>
+                    </div>
+                    <div>
+                        <p id="hours">00</p>
+                        <span>Hour</span>
+                    </div>
+                    <div>
+                        <p id="minutes">00</p>
+                        <span>Min</span>
+                    </div>
+                    <div>
+                        <p id="seconds">00</p>
+                        <span>Sec</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="ev">
+        <div class="image">
+            <img src="images/fbalunited.jpg" alt="fbalunited">
+            <img src="images/team12.jpeg" alt="team">
+        </div>
+        <div class="ozet-gol">
+            <a href="https://www.youtube.com/watch?v=Zl8ob3dd_ZI" target="_blank">
+                <img src="images/ozet.JPEG" alt="highlight">
+           </a> 
+            <video src="videos/gol.mp4" autoplay loop muted></video>
+        </div>
+        <div class="video">
+            <video src="videos/yun3lu.mp4" autoplay loop muted></video>
+            <video src="videos/takimuclu.mp4" autoplay loop muted></video>
+        </div>
+
+    </section>
+
+    <section id="fixture">
+        <h3 class="text-center heading-big left right">Fikstür</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tarih</th>
+                    <th>Saat</th>
+                    <th>Yer</th>
+                    <th>Takım</th>
+                    <th>Sonuç</th>
+                    <th>Goller</th>
+                    <th>Assistler</th>
+                </tr>
+            </thead>
+            <tbody id="fikstur-body">
+                <!-- Dinamik olarak doldurulacak -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="players">
+        <h2 class="text-center heading-big left right">Oyuncular</h2>
+        <div class="players">
+        </div>
+    </section>
+    <section>
+        <h2 class="text-center heading-big left right">Oyun Planı</h2>
+    </section>
+
+    <section id="game-plan">
+        <div class="saha-body">
+            <div class="saha">
+                <div class="orta-saha"></div>
+                <div class="orta-nokta"></div>
+                <div class="orta-cizgi"></div>
+                <div class="yay sag-yay"></div>
+                <div class="yay sol-yay"></div>
+                <div class="ceza-sahasi ceza-sag"></div>
+                <div class="ceza-sahasi ceza-sol"></div>
+                <div class="kale sol-kale">
+                    <div class="penalty"></div>
+                </div>
+                <div class="hareketli-oyuncu"></div>
+                <div class="kale sag-kale">
+                    <div class="penalty"></div>
+                </div>
+                <div class="oyuncu" id="oyuncu1" style="top: 30%; left: 25%;">9</div>
+                <div class="oyuncu" id="oyuncu2" style="top: 47%; left: 40%;">10</div>
+                <div class="oyuncu" id="oyuncu3" style="top: 70%; left: 45%;">8</div>
+                <div class="oyuncu" id="oyuncu4" style="top: 47%; left: 60%;">7</div>
+                <div class="oyuncu" id="oyuncu5" style="top: 25%; left: 45%;">14</div>
+                <div class="oyuncu" id="oyuncu6" style="top: 60%; left: 25%;">3</div>
+                <div class="oyuncu" id="oyuncu7" style="top: 47%; left: 0%">15</div>
+                <div class="oyuncu" id="rakip-oyuncu" style="top: 47%; left: 102%"></div>
+                <div class="oyuncu" id="rakip-oyuncu" style="top: 47%; left: 102%"></div>
+                <div class="oyuncu" id="rakip-oyuncu" style="top: 47%; left: 102%"></div>
+                <div class="oyuncu" id="rakip-oyuncu" style="top: 47%; left: 102%"></div>
+                <div class="oyuncu" id="rakip-oyuncu" style="top: 47%; left: 102%"></div>
+                <div class="oyuncu" id="rakip-oyuncu" style="top: 47%; left: 102%"></div>
+                <div class="oyuncu" id="rakip-oyuncu" style="top: 47%; left: 102%"></div>
+                <div class="pet-sise"></div> <!-- PET bottle element -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="highlights">
+        <h2 class="text-center heading-big left right">Özetler</h2>
+        <div class="highlights-img">
+            <a href="https://www.youtube.com/watch?v=Zl8ob3dd_ZI" target="_blank">
+                <img src="images/ozet.JPEG" alt="highlight">
+           </a> 
+        </div>
+    </section>
+    <div class="overlay"></div>
+    <div class="pop-up secret">
+        <div class="overlay"></div>
+        <div class="bckground"></div>
+        <div class="close-btn">❌</div>
+        <div class="form">
+            <h1>Sign In</h1>
+        </div>
+        <div class="form-element">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="">
+        </div>
+        <div class="form-element">
+            <label for="fate">Date</label>
+            <input type="date" id="date" placeholder="">
+        </div>
+        <div class="form-element">
+            <label for="mail">Email</label>
+            <input type="text" id="email" placeholder="enter email">
+        </div>
+        <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="enter password">
+        </div>
+        <div class="form-element">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+            <button id="sign-in">SIGN IN</button>
+        </div>
+        <div class="form-element">
+            <button id="log-in">LOG IN</button>
+        </div>
+    </div>
+    <div class="overlay2"></div>
+    <div class="pop-up2 secret2">
+        <div class="overlay2"></div>
+        <div class="bckground"></div>
+        <div class="close-btn2">❌</div>
+        <div class="form">
+            <h1>Log in</h1>
+        </div>
+        <div class="form-element">
+            <label for="mail">Email</label>
+            <input type="text" id="email2" placeholder="enter email">
+        </div>
+        <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" id="password2" placeholder="enter password">
+        </div>
+        <div class="form-element">
+            <input type="checkbox" id="remember-me2">
+            <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+            <button id="log-in2">LOG IN</button>
+        </div>
+        <div class="form-element">
+            <button id="sign-in2">SIGN IN</button>
+        </div>
+        <div class="form-element">
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+<script>
+    var countDownDate = new Date("December 24, 2024 21:00:00").getTime();
+    var x = setInterval(function(){
+        var now = new Date().getTime();
+        var distance = countDownDate - now; 
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60* 24)) / (1000 * 60* 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000* 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.querySelector("#days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        if(distance <0){
+            clearInterval(x)
+            alert("Maç Başladı!")
+        }
+    
+    },1000);
+</script>
+
+<script>
+    const fiksturBody = document.getElementById('fikstur-body');
+
+    fiksturData.matches.forEach(match => {
+        // Golleri yazdır
+        let goalsText = '';
+        Object.entries(match.goals).forEach(([player, count]) => {
+            goalsText += `${player}⚽ (${count}x), `;
+        });
+        goalsText = goalsText.slice(0, -2); // Sondaki virgülü kaldır
+
+        // Assistleri yazdır
+        let assistsText = '';
+        Object.entries(match.assists).forEach(([player, count]) => {
+            assistsText += `${player}🎯 (${count}x), `;
+        });
+        assistsText = assistsText.slice(0, -2); // Sondaki virgülü kaldır
+
+        const row = `
+            <tr>
+                <td>${match.date}</td>
+                <td>${match.time}</td>
+                <td>${match.location}</td>
+                <td>
+                    ${match.team1} <img src="${match.team1_logo}" alt="vs" width="20px"> vs 
+                    ${match.team2} <img src="${match.team2_logo}" alt="vs" width="20px">
+                </td>
+                <td>${match.score}</td>
+                <td>${goalsText}</td>
+                <td>${assistsText}</td>
+            </tr>
+        `;
+        fiksturBody.innerHTML += row;
+    });
+</script>
+
+<script>
+    // Players section
+    const playersSection = document.querySelector('.players');
+
+    // Clear the default players
+    playersSection.innerHTML = '';
+
+    // Create a map to store player goals based on fixture data
+    const playerGoalsMap = {};
+
+    const playerAssistsMap = {};
+
+    // Loop through the fixture data to calculate total goals for each player
+    fiksturData.matches.forEach(match => {
+        Object.entries(match.goals).forEach(([playerName, goalCount]) => {
+            // If player is not in the map, add them with initial goal count
+            if (!playerGoalsMap[playerName]) {
+                playerGoalsMap[playerName] = goalCount;
+            } else {
+                // If player already exists, accumulate the goals
+                playerGoalsMap[playerName] += goalCount;
+            }
+        });
+    });
+
+
+    // Loop through the fixture data to calculate total goals for each player
+    fiksturData.matches.forEach(match => {
+        Object.entries(match.assists).forEach(([playerName, assistCount]) => {
+            // If player is not in the map, add them with initial goal count
+            if (!playerAssistsMap[playerName]) {
+                playerAssistsMap[playerName] = assistCount;
+            } else {
+                // If player already exists, accumulate the goals
+                playerAssistsMap[playerName] += assistCount;
+            }
+        });
+    });
+
+
+    // Loop through playersData to render each player and update their total goals from fiksturData
+    playersData.players.forEach(player => {
+        const playerGoals = playerGoalsMap[player.fixturKey] || 0; // If no goals, default to 0
+        const playerAssists = playerAssistsMap[player.fixturKey] || 0; // If no goals, default to 0
+        const playerHTML = `
+            <div class="team">
+                <div class="player-img">
+                    <img src="${player.image}" alt="${player.name}">
+                    <span>${player.name}</span>
+                </div>
+                <div class="players-info">
+                    <span>Yaş: ${player.age}</span><br>
+                    <span>Boy: ${player.height}</span><br>
+                    <span>Kilo: ${player.weight}</span><br>
+                    <span>Mevki: ${player.position}</span><br>
+                    <span>Gol: ${playerGoals}</span><br> <!-- Use playerGoals from fiksturData -->
+                    <span>Assist: ${playerAssists}</span>
+                </div>
+            </div>
+        `;
+        playersSection.innerHTML += playerHTML;
+    });
+</script>
+</html>

@@ -1,0 +1,43 @@
+  <div class="overlay"></div>
+    <div class="pop-up secret">
+        <div class="overlay"></div>
+        <div class="bckground"></div>
+        <div class="close-btn">❌</div>
+        <div class="form">
+            <h1>Log in</h1>
+        </div>
+        <div class="form-element">
+            <label for="mail">Email</label>
+            <input type="text" id="email" placeholder="enter email">
+        </div>
+        <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="enter password">
+        </div>
+        <div class="form-element">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+            <button id="log-in">log in</button>
+        </div>
+        <div class="form-element">
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+
+
+    const num = (Number(1670).toString(2));
+const binary = num.split("");
+const counts = {};
+console.log(binary);   
+
+binary.forEach(zero => {
+    if(counts[zero]){
+        counts[zero]++;
+    }
+    else{
+        counts[zero] = 1;
+    }
+});
+console.log(counts); 

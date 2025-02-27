@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-red {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+li{
+    text-decoration: none;
+    color: #fff;
+}
+
+#firstUl {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#secondUl{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    }
+ul li {
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background: #ebae34;
+    border-radius: 8px;
+
+}
+
+.navbar {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 80px;
+}
+
+.countdown-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bg-black{
+    background-color: #000000;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 80px;
+}
+
+.next-match{
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 30px;
+}
+
+.next-match img{
+    width: 80px;
+    height: 80px;
+}
+
+.next-match-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.matchCountdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 70px;
+    color: #ffffff;
+}
+
+.matchCountdown div{
+    flex-basis: 100px;
+}
+
+.matchCountdown div p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+
+.home {
+    background-image: url(//assets.manutd.com/AssetPicker/images/0/0/3/2/197240/Header-Logo1500994616801.png);
+    display: flex;  
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+    
+}
+
+#ev{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: #f7f7f7;
+    position: relative;
+    top: 80px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.image img{
+    width: 420px;
+    border-radius: 10px;
+}
+
+.ozet-gol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ozet-gol img{
+    width: 550px;
+    border-radius: 10px;
+}
+
+.ozet-gol video{
+    width: 550px;
+    border-radius: 10px;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.video video{
+    width: 600px;
+    border-radius: 10px;
+}
+
+.name h1{
+    background-color: #c70101;
+    color: #f7f7f7;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 68px;
+    padding: 50px;
+}
+
+
+h3:before, h3:after{
+    background: #c70101;
+    height: 6px;
+    flex: 1px;
+    content: '';
+    margin: 0 20px;
+}
+
+.matches img{
+    height: 28px;
+    width: 28px;
+}
+
+table,tr,td,th{
+    border: 1px solid #c70101;
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 2px solid red;
+    text-align: center;
+    padding: 10px;
+}
+th {
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+}
+tr :hover{
+    background-color: orange;
+}
+thead tr{
+    background-color: #ebae34;
+    color: white;
+}
+
+#players{
+    color: #333;
+    padding: 50px;  
+    margin: 20px;
+}
+
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 48px;
+}
+
+
+h2:before, h2:after{
+    background: #c70101;
+    height: 6px;
+    flex: 1px;
+    content: '';
+    margin: 0 20px;
+}
+
+
+.players{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    flex-direction: row;    
+    width: 100%;
+    gap: 50px; 
+    padding: 70px;
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.players .player-img img{
+    border: 2px solid #c70101;
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.players .player-img span{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: #f7f7f7;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.players .players-info span{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #ebae34;
+    border-radius: 5px;
+    font-size: 24px;
+    color: #c70101;
+    width: 200px;
+}
+
+#game-plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #18880e;
+    font-family: arial, sans-serif;
+}
+
+#game-plan .saha{
+    width: 1500px;
+    height: 800px;
+    background-color: #18880e;
+    position: relative;
+    border: 5px solid #f7f7f7;
+    box-shadow: 0 16px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+#game-plan .orta-saha{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border: 7px solid #f7f7f7;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orta-nokta{
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #f7f7f7;
+    top: calc(50% - px);
+    left: 741px;
+}
+
+#game-plan .orta-cizgi{
+    position: absolute;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 100%;
+    top: 0%;
+    background-color: #f7f7f7;
+}
+
+.kale{
+    height: 176px;
+    width: 50px;
+    position: absolute;
+    top: calc(50% - 90px);
+    border: 4px solid #f7f7f7;
+}
+
+.kale.sol-kale{
+    left: -5px;
+}
+
+.kale.sag-kale{
+    right: -5px;
+}
+
+.penalty{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #f7f7f7;
+    top: calc(50% - 4px);
+}
+
+.kale.sag-kale > .penalty{
+    left: -40px;
+}
+
+.kale.sol-kale > .penalty{
+    right: -40px;
+}
+
+.yay{
+    width: 146px;
+    height: 146px;
+    border: 4px solid #f7f7f7;
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 73px);
+}
+
+.yay.sag-yay{
+    right: 0;
+}
+
+.yay.sol-yay{
+    left: 0;
+}
+
+.ceza-sahasi{
+    position: absolute;
+    height: 260px;
+    width: 122px;
+    top: calc(50% - 130px);
+    border: 4px solid #f7f7f7;  
+    background-color: #18880e;
+}
+
+.ceza-sahasi.ceza-sag{
+    right: -4px;
+}
+
+.ceza-sahasi.ceza-sol{
+    left: -4px;
+}
+
+.oyuncu{
+    width: 50px;
+    height: 50px;
+    background-color: #c70101;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7f7f7;
+    font-weight: bold;
+    font-size: 24px;
+    border: 1px solid #f7f7f7;
+    cursor: pointer;
+}
+
+#oyuncu4{
+    background-image: url(.);
+}
+
+#rakip-oyuncu{
+    background-color: #071485;
+}
+
+
+#highlights{
+    margin-top: 50px;
+}
+
+.highlights-img img{
+    width: 600px;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.pop-up, .pop-up2{
+    width: 400px;
+    position: fixed ;
+    background-image: url("//assets.manutd.com/AssetPicker/images/0/0/11/201/772402/Manchester_United_Crest_Comp_180x1801550591475296.png");
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+    background-size: 75px;
+    background-color: #000000;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pop-up .close-btn, .pop-up2 .close-btn2{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.pop-up .form, .pop-up2 .form{
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.pop-up .form-element, .pop-up2 .form-element{
+    margin: 15px 0;
+}
+
+.pop-up .form-element label, .pop-up2 .form-element label{
+    font-size: 22px;
+    color: #ff0000;
+}
+
+.pop-up .form-element input[type="text"], .pop-up .form-element input[type="password"], .pop-up .form-element input[type="date"], .pop-up2 .form-element input[type="text"], .pop-up2 .form-element input[type="password"]{
+    width: 250px;
+    height: 30px;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.pop-up .form-element #sign-in{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    color: #f7f7f7;
+    background-color: #ff0000;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.pop-up .form-element #log-in{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    color: #f7f7f7;
+    background-color: #ff0000;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.pop-up2 .form-element #log-in2{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    color: #f7f7f7;
+    background-color: #ff0000;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.pop-up2 .form-element #sign-in2{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    color: #f7f7f7;
+    background-color: #ff0000;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.pop-up2 .form-element a{
+    color: #3f9ce9;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.secret{
+    display: none;
+}
+
+.secret2{
+    display: none;
+}
+
+.overlay, .overlay2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; 
+    z-index: 998; 
+    backdrop-filter: blur(15px); 
+}
+
+
+.hareketli-oyuncu {
+    width: 80px;
+    height: 90px;
+    background-image: url("../images/hakan.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -50px; /* Sahanın üst kenarının biraz üstünde başlar */
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;    
+    animation: dolas 30s linear infinite; /* 15 saniyede bir tur atan animasyon */
+    animation-play-state: running; /* Başlangıçta animasyonu çalıştır */
+}
+
+/* Saha dışında dikdörtgen tur animasyonu */
+@keyframes dolas {
+    0% { top: -100px; left: 0; }                    /* Sol üst köşe dışında */
+    25% { top: -100px; left: 1550px; }              /* Sağ üst köşe dışında */
+    50% { top: 780px; left: 1550px; }              /* Sağ alt köşe dışında */
+    75% { top: 780px; left: -100px; }                   /* Sol alt köşe dışında */
+    100% { top: -100px; left: -100px}                  /* Başlangıç noktası, sol üst köşe dışında */
+}
+
+.pet-sise {
+    width: 40px;
+    height: 60px;
+    background-image: url("../images/sise.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none; /* İlk başta gizli */
+    transition: transform 0.5s ease; /* Fırlatma animasyonu */
+}
+
+/* Pet şişenin fırlatma animasyonu */
+@keyframes firlat {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-100px) rotate(360deg); /* Yukarıya doğru fırlatma */
+    }
+    100% {
+        transform: translateY(0); /* İniş */
+    }
+}
