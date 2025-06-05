@@ -1,0 +1,31 @@
+# macOS system files
+.DS_Store
+__MACOSX/
+
+# Node.js (if you add npm packages later)
+node_modules/
+
+# Logs
+*.log
+
+# Optional OS or code editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables (if used)
+.env
+
+# GitHub Pages build (if using custom tools like Jekyll)
+_site/
+
+# Videos (optional: remove if you want them tracked)
+*.mp4
+*.mov
+
+# Image previews (optional: remove if you want to keep all images)
+*.jpeg
+*.jpg
+*.png
+*.webp
