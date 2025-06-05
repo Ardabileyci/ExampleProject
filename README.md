@@ -8,10 +8,8 @@ This project includes a collection of interactive components built using **HTML*
 
 ### Key Files:
 - `index.html`: Main homepage
-- `table.html`: Contains an interactive table
-- `bell.html`: Page with bell animation or sound effect
-- `index.js`, `index2.js`, `index3.js`, `bell.js`, `yun.js`, `chatgpt.js`: JavaScript files powering the pages
-- `bell.css`, `main.css`, `global.css`: Stylesheets for visual design
+- `index.js`, JavaScript files powering the pages
+- `main.css`, `global.css`: Stylesheets for visual design
 - `images/`: Contains logos, characters, and various themed visuals
 - `videos/`: Short clips used on pages
 
@@ -23,7 +21,7 @@ This project includes a collection of interactive components built using **HTML*
 - 🎥 Video and image integration
 - 🎨 CSS transitions and responsive layouts
 - 📊 Table-based data display
-- 🔔 Interactive or animated elements (bell, logos, etc.)
+- 🔔 Interactive or animated elements (logos, etc.)
 - 📸 Thematic graphics and character visuals
 
 ---
